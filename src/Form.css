@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap");
+
+input {
+  width: 460px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+input::placeholder {
+  color: #00663547;
+  font-family: "Inter", sans-serif;
+}
+.searcher:focus {
+  outline: none;
+}
