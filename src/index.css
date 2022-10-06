@@ -1,4 +1,6 @@
 body {
   background-image: url(/src/bg.jpg);
   box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
