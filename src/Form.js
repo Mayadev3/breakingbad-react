@@ -4,7 +4,13 @@ import axios from "axios";
 import Results from "./Results.js";
 
 export default function Form() {
-  let [keyWord, setKeyWord] = useState();
+  let [keyWord, setKeyWord] = useState(null);
+  let [infos, setInfos] = useState(null);
+
+  function handleResponse(response) {
+    console.log(response.data[1].img);
+    setInfos(response.data[0]);
+  }
 
   function handleChange(event) {
     setKeyWord(event.target.value);
@@ -12,6 +18,8 @@ export default function Form() {
 
   function handleSubmit(event) {
     event.preventDefault();
+    let apiUrl = `https://www.breakingbadapi.com/api/characters?name=${keyWord}`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   return (
@@ -24,7 +32,7 @@ export default function Form() {
           onChange={handleChange}
         />
       </form>
-      <Results result={keyWord} />
+      <Results result={infos} />
     </div>
   );
 }
