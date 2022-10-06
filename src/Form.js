@@ -5,7 +5,7 @@ import Results from "./Results.js";
 //import Spinner from "./spinner.gif";
 
 export default function Form() {
-  //let [keyWord, setKeyWord] = useState(null);
+  let [keyWord, setKeyWord] = useState(null);
   let [infos, setInfos] = useState([]);
 
   function handleResponse(response) {
@@ -14,12 +14,12 @@ export default function Form() {
   }
 
   function handleChange(event) {
-    //setKeyWord(event.target.value);
+    setKeyWord(event.target.value);
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    let apiUrl = `https://www.breakingbadapi.com/api/characters`;
+    let apiUrl = `https://www.breakingbadapi.com/api/characters?name=${keyWord}`;
     axios.get(apiUrl).then(handleResponse);
   }
 

@@ -7,7 +7,7 @@ export default function CharacterItem(props) {
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
-            <img src={props.item.img} alt="" />
+            <img src={props.item.img} alt="character" />
           </div>
           <div className="card-back">
             <h1>{props.item.name}</h1>
