@@ -6,4 +6,6 @@ body {
     rgba(226, 226, 11, 1) 40%,
     rgba(0, 102, 52, 1) 95%
   );
+  background-repeat: no-repeat;
+  background-size: cover;
 }
