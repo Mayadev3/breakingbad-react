@@ -4,6 +4,7 @@ export default function CharacterItem(props) {
   return (
     <div className="CharacterItem">
       {/*container of entire card collection*/}
+
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
