@@ -3,13 +3,15 @@ import "./CharacterItem.css";
 export default function CharacterItem(props) {
   return (
     <div className="CharacterItem">
-      {/*<img src={props.item.img} alt="character" />*/}
+      {/*container of entire card collection*/}
       <div className="card">
         <div className="card-inner">
           <div className="card-front">
+            {/*content of front of card*/}
             <img src={props.item.img} alt="character" />
           </div>
           <div className="card-back">
+            {/*content of back of card*/}
             <h1>{props.item.name}</h1>
             <ul>
               <li>
