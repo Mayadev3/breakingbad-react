@@ -13,3 +13,9 @@ input::placeholder {
 .searcher:focus {
   outline: none;
 }
+
+@media (max-width: 500px) {
+  .Form form input {
+    width: 78%;
+  }
+}
