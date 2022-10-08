@@ -21,6 +21,7 @@ export default function Form() {
     event.preventDefault();
     let apiUrl = `https://www.breakingbadapi.com/api/characters?name=${keyWord}`;
     axios.get(apiUrl).then(handleResponse);
+    console.log(apiUrl);
   }
 
   return (
