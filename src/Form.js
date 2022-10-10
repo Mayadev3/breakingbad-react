@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Form.css";
 import axios from "axios";
 import Results from "./Results.js";
-//import Spinner from "./spinner.gif";
 
 export default function Form() {
   let [keyWord, setKeyWord] = useState(null);
