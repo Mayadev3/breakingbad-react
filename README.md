@@ -1,3 +1,16 @@
+#Breaking-Bad
+
+I created this Breaking Bad React project immediately after receiving my React certificate to reinforce what I have learnt. Breaking bad fans will definitely love it. When a user submits the name of a character from the movie, a flip identity card of that character will be displayed. The front of the card shows a picture of the character and the back shows details of the character including their real name, nickname, birthday and status.
+
+Coding Achievements:
+
+- Built a form to search for the character by name
+- Used axios to get data from the Breaking Bad API
+- Created various components and their corresponding styling sheets
+- Injected API data into the DOM using properties and states
+
+
+
 Demo link: https://funny-nougat-71331d.netlify.app/
 
 
